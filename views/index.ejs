@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lapsus Azora</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Lapsus Azora</h1>
+    <form action="/shorten" method="POST">
+        <input type="text" name="originalURL" placeholder="Enter your URL" required>
+        <button type="submit">Shorten URL</button>
+    </form>
+    <% if (message) { %>
+        <p><%= message %></p>
+    <% } %>
+</body>
+</html>
